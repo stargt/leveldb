@@ -17,7 +17,7 @@
  */
 package org.iq80.leveldb.impl;
 
-import org.iq80.leveldb.util.ByteBufferSupport;
+//import org.iq80.leveldb.util.ByteBufferSupport;
 import org.iq80.leveldb.util.Closeables;
 import org.iq80.leveldb.util.Slice;
 import org.iq80.leveldb.util.SliceInput;
@@ -225,7 +225,7 @@ public class MMapLogWriter
 
     private void unmap()
     {
-        ByteBufferSupport.unmap(mappedByteBuffer);
+//        ByteBufferSupport.unmap(mappedByteBuffer);
     }
 
     private static Slice newLogRecordHeader(LogChunkType type, Slice slice)

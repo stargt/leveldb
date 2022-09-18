@@ -17,7 +17,7 @@
  */
 package org.iq80.leveldb.table;
 
-import org.iq80.leveldb.util.ByteBufferSupport;
+//import org.iq80.leveldb.util.ByteBufferSupport;
 import org.iq80.leveldb.util.Closeables;
 import org.iq80.leveldb.util.Slice;
 import org.iq80.leveldb.util.Slices;
@@ -80,7 +80,7 @@ public class MMapTable
 
         public Void call()
         {
-            ByteBufferSupport.unmap(data);
+//            ByteBufferSupport.unmap(data);
             Closeables.closeQuietly(closeable);
             return null;
         }
